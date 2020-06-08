@@ -65,6 +65,13 @@ PRODUCT_PACKAGES += \
     nqnfcee_access.xml \
     nqnfcse_access.xml
 
+# MicroG
+PRODUCT_PACKAGES += \
+    com.google.android.gms
+
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/microg/privapp-permissions-com.google.android.gms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.google.android.gms.xml
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp.conf \

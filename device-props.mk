@@ -27,3 +27,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.uicc_se_enabled=true
+
+# Debug
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.adb.enable=1
+    persist.service.debuggable=1
+    persist.sys.usb.config=mtp,adb
